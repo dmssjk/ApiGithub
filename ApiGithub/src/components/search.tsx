@@ -1,5 +1,5 @@
 type SearchProps = {
-  loadUser: (userNaame: string) => Promise<void>;
+  loadUser: (userName: string) => Promise<void>;
 };
 
 import { useState } from "react";
@@ -10,7 +10,7 @@ const search = ({ loadUser }: SearchProps) => {
   const [userName, setUserName] = useState("");
   return (
     <div>
-      <h2>Busque por usuário:</h2>
+      <h2>Busque por usuário:</h2> {/*  */}
       <p>conheça seus melhores repositórios</p>
       <div>
         <input
