@@ -2,6 +2,8 @@ import { UserProps } from "../types/user";
 
 import Search from "../components/search"; /* CUIDADO COM UPPER CASE  */
 
+import {User} from "../components/user"
+
 import { useState } from "react";
 
 const home = () => {
@@ -21,13 +23,12 @@ const home = () => {
       following,
     };
     setUser(userData);
-
   };
 
   return (
     <div>
       <Search loadUser={loadUser} />
-      {user && <p>{}user.login}</p>}
+      {user && <User {...user} />}
     </div>
   );
 };
