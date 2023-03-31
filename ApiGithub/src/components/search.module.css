@@ -1,5 +1,5 @@
 .search {
-  background-color: #2b3566;
+  background-color: #FF6C2F;
   padding: 2rem;
   border-radius: 1rem;
   display: flex;
@@ -11,7 +11,8 @@
 }
 
 .search p {
-  color: #9da5d1;
+  color: #010101;
+  
 }
 
 .search_container {
@@ -29,4 +30,31 @@
 .search_container button {
   background-color: #0e1129;
   cursor: pointer;
+}
+.search_anime { /* linear gradient  */
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #aca4a5 67%,
+    #0a0a09 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }

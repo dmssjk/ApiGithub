@@ -2,7 +2,7 @@ import { UserProps } from "../types/user";
 
 import Search from "../components/search"; /* CUIDADO COM UPPER CASE  */
 
-import {User} from "../components/user"
+import User from "../components/user";
 
 import { useState } from "react";
 

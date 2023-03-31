@@ -4,6 +4,8 @@ import { MdLocationPin } from "react-icons/md";
 
 import { Link } from "react-router-dom";
 
+import classes from "./search.module.css";
+
 const user = ({
   login,
   avatar_url,
@@ -12,8 +14,9 @@ const user = ({
   location,
 }: UserProps) => {
   return (
-    <div>
+    <div className={classes.search}>
       <img src={avatar_url} alt="login" />
+      <h2>Usuário:</h2>
       <h2>{login}</h2>
       <p>
         <MdLocationPin />
